@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+
+    <h1 style="font-family:badaboom;color:#7302b0">Welcome To the <b>PlanetBlue</b>!</h1>
+    <b>
+    <table class="center"  style="font-family:badaboom;width:50%">
+        <thead style="background-color: #d5d5de;color:#7302b0">
+            <tr>
+                <th>MY TOP 5 SCORES</th>
+            </tr>
+        </thead>
+
+        <tbody style="color:#4a0f8a">
+            {% for score in scores %}
+                <tr>
+                    <td>{{ score.score }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <br>
+    </table>
+    </b>
+    <br>
+    <br>
+    <p style="font-family:badaboom;color:#7302b0;font-size:130%">Click <b>PlanetBlue</b> on the up left corner to play the game</p>
+
+    <p style="font-family:badaboom;color:#7302b0">You can see instructions in the <b>Instructions</b> section.</p>
+    <p style="font-family:badaboom;color:#7302b0">You can also check the top scores in the <b>Top Scores</b> section.</p>
+    <p style="font-family:badaboom;color:#7302b0;font-size:90%">You can change your password in the <b>Change Password</b> or log out your account by clicking the <b>Log Out</b></p>
+{% endblock %}

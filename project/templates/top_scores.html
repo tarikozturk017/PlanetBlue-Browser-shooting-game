@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Top Scores
+{% endblock %}
+
+{% block main %}
+
+    <b>
+    <table class="center"  style="font-family:badaboom;width:50%">
+        <thead style="background-color: #d5d5de;color:#7302b0">
+            <tr>
+                <th>PLAYERS</th>
+                <th>TOP 10 SCORES</th>
+            </tr>
+        </thead>
+
+        <tbody style="color:#4a0f8a">
+            {% for top_score in top_scores %}
+                <tr>
+                    <td class="uppercase">{{ top_score.username }}</td>
+                    <td>{{ top_score.score }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <br>
+    </table>
+    </b>
+{% endblock %}

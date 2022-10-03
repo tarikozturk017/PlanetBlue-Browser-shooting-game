@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Instructions
+{% endblock %}
+
+{% block main %}
+<div class="instructions">
+    <h2><b>How to play the game?</b></h2>
+    <br>
+    <h4><b>Move the Spaceship</b></h4>
+    <br>
+    <p>You can rotate your ship by pressing <b>Left Arrow Key</b> or <b>Right Arrow Key</b> </p>
+    <p>and thrust your ship by pressing <b>Up Arrow</b></p>
+    <p>You can shoot the meteors by pressing <b>Space Bar</b></p>
+    <img src="static/keyboard.png" alt="GameKeys">
+    <br>
+    <br>
+    <h2><b>Game Features</b></h2><br>
+    <img src="static/start.png" alt="Beginning of the game" width=40% height=40%>
+    <br>
+    <br>
+    <p>When the game is started, your ship is going to blink for a few seconds. During this time you cannot crash any meteor and lose your one of your lives</p>
+    <p>After a few seconds, meteors start to appear on the screen from different point of the edges.</p>
+    <img src="static/startMeteor.png" alt="Meteors appear" width=40% height=40%><br>
+    <br>
+    <p>Your goal is to shoot the meteors by pressing space bar on your keyboard</p>
+    <p>If you shoot them successfully, your score will go up. And if you kill all of the meteors on the screen, you will level up</p>
+    <img src="static/shoot.png" alt="Laser" width=40% height=40%><br><br>
+    <p>If a meteor hit the PlanetBlue before you shoot them, PlanetBlue lose some health, and your score goes down</p>
+    <p><img src="static/beforehit.png" alt="Before Hit" width=380 height=320>  <img src="static/afterhit.png" alt="After Hit" width=380 height=320></p>
+    <p>If you crash a meteor, your ship blows up and, you lose one of your lives and some scores</p>
+    <p>After your ship blows up, you restart to the game and your ship blinks again.</p>
+    <p><img src="static/beforecrash.png" alt="Before Crash" width=380 height=320>  <img src="static/aftercrash.png" alt="After Crash" width=380 height=320></p>
+    <p>Every two level, a red ship icon with a circle around will appear on the secreen, randomly.</p>
+    <p>If you pass over that icon, you will earn scores, and you will earn one more life.</p>
+    <p><img src="static/beforelifebar.png" alt="Before Life Bar" width=380 height=320>  <img src="static/afterlifebar.png" alt="After Life Bar" width=380 height=320></p>
+    <p>If you go throught the edges, you will come from the other side of the screen, and you lose some scores</p>
+    <p>When you lose all of your lives or PlanetBlue's health drops to 0, <b>the game is over</b>.</p>
+</div>
+{% endblock %}
