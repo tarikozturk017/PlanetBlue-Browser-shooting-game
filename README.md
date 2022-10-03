@@ -4,7 +4,7 @@
 
 # Welcome to the PlanetBlue.
 
-# Enterin the website
+# Entering the website
 This is a website in which you can play the shooting game called PlanetBlue.
 
 Once you enter the website, firstly, you need to login your account if you have one.
@@ -47,4 +47,5 @@ I also use SQL to store data, which I recieve from the game with the help of Jso
 I created the game using JavaScript. And to design the website, I used CSS and HTML.
 I created this Project on the CS50’s IDE. You can also see all my codes, and the images I used in the website.
 
-Thank you for reading this and spending time to check out my project. I hope you enjoy.
+Thank you.
+NOTE: This game can be played only when the server is running.
